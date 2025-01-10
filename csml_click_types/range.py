@@ -3,6 +3,8 @@ import click
 
 
 class RangeParamType(click.ParamType):
+    name = "range"
+
     def convert(
         self, value: Any, param: Optional[click.Parameter], ctx: Optional[click.Context]
     ) -> Any:
